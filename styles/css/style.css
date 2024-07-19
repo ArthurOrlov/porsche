@@ -105,16 +105,24 @@ button {
 
 /* HEADER */
 
-header {
-    height: 100px;
-}
-.header img {
-    height: 80px;
-}
 
 .header.sticky {
     position: fixed;
     top: 0;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100px;
+}
+
+.header__logo {
+    height: 60px;
+}
+.header__logo-name {
+    height: 40px;
 }
 
 
@@ -148,17 +156,11 @@ header {
         -ms-transform: none;
             transform: none;
 }
-.burger__menu,
-.burger__menu--ws-menu {
-    display: none;
-}
 
-.burger,
-.burger__ws-menu {
-    display: none;
+.burger {
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 64px;
+    height: 64px;
     background: url(../img/burger.png) no-repeat;
     -webkit-transition: all .1s ease;
         -o-transition: all .1s ease;

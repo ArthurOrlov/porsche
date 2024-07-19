@@ -12,8 +12,21 @@
   <body>
     <header class="header stycky">
       <div class="header__container">
-        <img src="./images/logo.jpg" alt="logo">
-        <img src="./images/logo-name.png" alt="logo-name">
+        <img class="header__logo" src="./images/logo.jpg" alt="logo">
+        <img class="header__logo-name" src="./images/logo-name.png" alt="logo-name">
+        <div class="burger__menu">
+          <button class="burger" aria-label="меню">
+            <span id="burger" class="burger__btn"><img src="./images/burger-menu-svgrepo-com.svg" alt=""></span>
+          </button>
+          <div>
+            <ul id="menu">
+              <li class="header__inner-list--item"><a href="#price">Услуги и цены</a></li>
+              <li class="header__inner-list--item"><a href="#about">О компании</a></li>
+              <li class="header__inner-list--item"><a href="#how">Отзывы</a></li>
+              <li class="header__inner-list--item"><a href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <section class="product">
