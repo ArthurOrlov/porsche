@@ -2,6 +2,19 @@ document.querySelector('.burger').addEventListener('click', function(){
   document.querySelector('#menu').classList.toggle('is-active')
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.history__years-link').forEach(function(tabsBtn) {
+      tabsBtn.addEventListener('click', function(event) {
+          const path = event.currentTarget.dataset.path
+
+          document.querySelectorAll('.tab-content').forEach(function(tabContent) {
+              tabContent.classList.remove('tab-content-active')
+          })
+          document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active');
+      })
+  })
+})
+
 // Утилиты
 
 function toNum(str) {
@@ -132,7 +145,7 @@ function popupContainerFill() {
     productImage.classList.add("popup__product-image");
     productImage.setAttribute("src", product.imageSrc);
 
-    const productTitle = document.createElement("h2");
+    const productTitle = document.createElement("h4");
     productTitle.classList.add("popup__product-title");
     productTitle.innerHTML = product.name;
 

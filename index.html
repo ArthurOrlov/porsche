@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,13 +10,14 @@
     <title>Porsche</title>
   </head>
   <body>
-    <header class="header stycky">
+    <img class="start__img" src="./img/porsche_911_carrera_108530.jpg" alt="start-bgi">
+    <header class="header sticky">
       <div class="header__container">
-        <img class="header__logo" src="./images/logo.jpg" alt="logo">
-        <img class="header__logo-name" src="./images/logo-name.png" alt="logo-name">
+        <img class="header__logo" src="./img/porsche-logo.jpg" alt="logo">
+        <img class="header__logo-name" src="./img/logo-name.png" alt="logo-name">
         <div class="burger__menu">
           <button class="burger" aria-label="меню">
-            <span id="burger" class="burger__btn"><img src="./images/burger-menu-svgrepo-com.svg" alt=""></span>
+            <span id="burger" class="burger__btn"><img src="./img/burger-menu-svgrepo-com.svg" alt=""></span>
           </button>
           <div>
             <ul id="menu">
@@ -29,186 +30,331 @@
         </div>
       </div>
     </header>
-    <section class="product">
-      <div class="product__info">
-        <div class="container">
-          <h1 class="product__title">Каталог</h1>
-          <h1 class="product__title product__title--gray">8 товаров</h1>
+
+    <section class="start">
+      <h1>Так может выглядеть<br>сайт porsche<br>by ArtOrlov</h1>
+      <div class="start__whiteblock">&nbsp</div>
+    </section>
+
+    <section class="history">
+      <div class="history__img"><img  src="./img/porsche-0.webp" alt="gt3"></div>
+      <div class="history__container">
+        <h2>Прикаснись к истории</h2>
+        <div class="history__years">
+          <div class="history__years-link" data-path="one">1931 - 1948</div>
+          <img src="./img/line.svg" alt="line">
+          <div class="history__years-link" data-path="two">1948 - 1965</div>
+          <img src="./img/line.svg" alt="line">
+          <div class="history__years-link" data-path="three">1963 - 1976</div>
+          <img src="./img/line.svg" alt="line">
+          <div class="history__years-link" data-path="four">1972 - 1981</div>
+          <img src="./img/line.svg" alt="line">
+          <div class="history__years-link" data-path="five">1981 - 1988</div>
+          <img src="./img/line.svg" alt="line">
+          <div class="history__years-link" data-path="six">1989 - 1996</div>
+          <img src="./img/line.svg" alt="line">
+          <div class="history__years-link" data-path="seven">1996 - 2024</div>
+        </div>
+        <div class="history__block tab-content tab-content-active" data-target="one">
+          <img class="history__block-img" src="./img/64.jpg" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>К моменту выпуска первого автомобиля под своим именем Фердинанд Порше успел накопить немалый опыт. Основанное им 25 апреля 1931 года предприятие Dr. Ing. h.c. F. Porsche GmbH под его началом уже успело поработать над такими проектами, как 6-цилиндровый гоночный Auto Union и Volkswagen Käfer, ставший одним из самых продаваемых автомобилей в истории. В 1939 году был разработан первый автомобиль компании — Porsche 64, который стал прародителем всех будущих Porsche. Для постройки этого экземпляра Фердинанд Порше использовал многие компоненты от Volkswagen Käfer.</p>
+            <p>В течение Второй мировой войны 1939—1945 годов компания занималась выпуском военной продукции — штабных автомобилей и амфибий. Фердинанд Порше принимал участие в разработке немецких тяжёлых танков «Тигр P», а также сверхтяжёлого танка «Маус».</p>
+            <p>В декабре 1945 года он был арестован по обвинению в военных преступлениях и помещён в тюрьму, где провёл 20 месяцев. В то же время его сын Фердинанд (краткое имя Ферри) Антон Эрнст решил начать выпуск собственных автомобилей. В Гмюнде Ферри Порше вместе с несколькими знакомыми инженерами собрал прототип 356-го с мотором в базе и алюминиевым открытым кузовом и начал подготовку к его серийному производству. В июне 1948 года этот экземпляр был сертифицирован для дорог общего пользования. Как и 9 лет назад, тут вновь были использованы агрегаты от Volkswagen Käfer, включая 4-цилиндровый мотор воздушного охлаждения, подвеску и коробку передач. У первых серийных машин было принципиальное отличие — двигатель перенесли за заднюю ось, что позволило удешевить производство и освободить пространство для двух дополнительных мест в салоне. Спроектированный кузов обладал очень хорошей аэродинамикой — Cx равнялся 0,29. В 1950 году компания вернулась в Штутгарт.</p>
+          </div>
+        </div>
+        <div class="history__block tab-content" data-target="two">
+          <img class="history__block-img" src="./img/1100.jpg" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>С момента возвращения в Штутгарт все кузовные панели изготавливались из стали, от алюминия отказались. Завод начинал с купе и кабриолетов и 1100-кубовых моторов мощностью всего в 40 лошадиных сил(29,42 кВт), но скоро выбор расширился: к 1954 году продавались версии 1100, 1300, 1300A, 1300S, 1500, и 1500S. Конструкция постоянно улучшалась: объём и мощность двигателей продолжили свой рост, появились дисковые тормоза на всех колёсах и синхронизированная КПП, были предложены новые варианты кузовов — хардтопы и родстеры. Агрегаты от Volkswagen постепенно заменялись на собственные. Например, в период выпуска серии 356А (1955—1959) уже можно было заказать двигатель с четырьмя распредвалами, двумя катушками зажигания, и другими оригинальными компонентами. Серию А сменила B (1959—1963), а её — C (1963—1965). Общий объём выпуска всех модификаций составил немногим более 76 тысяч.</p>
+            <p>Параллельно создавались модификации для гонок (550 Spyder, 718 и др.).</p>
+            <p>В 1951 году Фердинанд Порше в возрасте 75 лет скончался от сердечного приступа — его здоровье было подорвано пребыванием в тюрьме.</p>
+          </div>
+        </div>
+        <div class="history__block tab-content" data-target="three">
+          <img class="history__block-img" src="./img/695.jpg" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>В конце 1950-х был изготовлен прототип Porsche 695. У руководства компании на этот счёт не было единого мнения: 356-й успел заработать себе хорошую репутацию, поэтому для небольшой семейной фирмы Porsche, переход на новую модель был связан с повышенным риском. Но конструкция образца 1948 года устаревала всё быстрее и резервов для её обновления почти не оставалось. Поэтому в 1963 году на автосалоне во Франкфурте был представлен Porsche 911. Основные моменты в конструкции остались теми же (заднее расположение оппозитного мотора и задний привод), но это уже был современный спортивный автомобиль с классическими линиями кузова в духе Porsche 356. Автором дизайна стал Фердинанд Александр «Бутци» Порше, старший сын Ферри Порше. Первоначально вместо индекса «911» должен был использоваться другой — «901». Но комбинация из 3 цифр с нулём посередине уже была зарезервирована за Peugeot. Автомобиль стал называться 911, но цифры 901 никуда не исчезли: так стали называть 911 модель по внутризаводской номенклатуре (1964—1973).</p>
+            <p>Мотор в первые 2 года выпуска был один — 2-литровый 130-сильный. В 1966 году на конвейер встала модификация Targa (разновидность открытого кузова со стеклянной крышей); после окончания в 1965 году выпуска кабриолетов 356-й серии, они как таковые не появлялись в модельном ряду компании вплоть до 1982 года. В конце 1960-х годов колёсную базу машины увеличили и стали оснащать моторы увеличенного объёма c механическим впрыском. Вершиной эволюции 901-х стали «боевые» модификации Carrera RS 2.7 и Carrera RSR начала 1970-х. Слово Carrera появилось в названии спортивных версий 356 в середине 1950-х — так увековечили память о победе в гонке Каррера Панамерикана 54-го года, после которой марка получила широкую известность в Северной Америке.</p>
+            <p>В конце 1960-х годов была запущена в серию ещё одна новая модель — Porsche 914. В то время компании Volkswagen понадобилось добавить в модельный ряд какой-нибудь спортивный автомобиль, а Porsche требовался преемник модели 912 (удешевлённый 911-й с мотором от 356-го). Поэтому было решено объединить усилия, и в 1969 году начался выпуск автомобиля под названием VW-Porsche 914, центральномоторной Targa с 4- и 6-цилиндровыми моторами. Детище альянса не оправдало ожиданий — довольно необычная внешность и неудачная маркетинговая политика (из-за «смешанного» названия VW-Porsche) негативно отразились на продажах. Всего за 7 лет выпуска было изготовлено около 120 тысяч таких машин.</p>
+          </div>
+        </div>
+        <div class="history__block tab-content" data-target="four">
+          <img class="history__block-img" src="./img/924.jpg" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>В 1972 году юридический статус фирмы сменился с партнёрства с ограниченной ответственностью на открытую (публичную). Dr. Ing. h.c. F. Porsche KG перестала быть семейным предприятием, и теперь называлась Dr. Ing. h.c. F. Porsche AG; семья Порше утратила непосредственный контроль над делами компании, однако доля капитала в ней у Ферри и его сыновей значительно превышала долю семьи Пиех. После реструктуризации Ф. А. Порше с братом Гансом-Петером основал компанию Porsche Design, выпускающую эксклюзивные очки, часы, велосипеды и другие престижные вещи. Внук Ф. Порше, Фердинанд Пиех, перешёл в Audi, а затем в Volkswagen, где впоследствии стал генеральным директором концерна.</p>
+            <p>Первым руководителем компании, который был не из семьи Порше, стал Эрнст Фюрман, до этого работавший в отделе разработки двигателей. Одно из первых его решений на новой должности — замена 911-й серии спорткаром классической компоновки (передний двигатель — задний привод) — моделью 928 с 8-цилиндровым мотором. При его правлении на конвейер был поставлен ещё один переднемоторный автомобиль — Porsche 924. После дебюта на автосалоне в Париже 1974 года модификации Turbo, развитие линейки 911 (к тому времени в производство пошла модернизированная серия 930 (1973—1989)) фактически остановилось до начала 1980-х, пока Фюрман не был снят с должности. Но его проекты продолжали выпускаться и дальше: последние автомобили Porsche с передним расположением мотора покинули стены завода в 1995 году.</p>
+            <p>На смену 914-му в 1976 году пришли сразу две новые машины — 924 и 912 (теперь с мотором Volkswagen 2.0), который просуществовал всего год. История появления 924-го схожа с 914-м — компания Volkswagen не отказывалась от идеи собственного доступного спорткара и предложила инженерам Porsche разработать соответствующий проект. Им предоставили полную свободу действий, кроме разработки двигателя и КПП — ими должны были стать агрегаты от Audi. Ещё до окончания работ, новое руководство Volkswagen, во главе с Тони Шмюкером, засомневалось в целесообразности выпуска такой машины, так как в 1973 году начался нефтяной кризис. Тогда проект был выкуплен у Volkswagen.</p>
+            <p>По сравнению с 911 моделью это была совсем другая конструкция: современная внешность, классическая компоновка и развесовка, близкая к идеальной, экономичные 4-цилиндровые моторы с водяным охлаждением. Porsche 924 пользовался спросом, и у него был хороший потенциал, что подтверждается постоянным обновлением и пополнением линейки. Уже через 3 года после начала продаж в ней появилась версия с турбонаддувом, а ещё через три года стали выпускать 944-ю — её преемницу. В целом машина осталась той же, а изменения были эволюционными — улучшились многие показатели, а во внешности самым заметным отличием были расширенные крылья, перешедшие по наследству от спецверсии 924 Carrera GT. Эти две линейки производились вместе 6 лет, пока в 1988 году модель не сняли с производства (всего продали почти 150 тысяч).</p>
+          </div>
+        </div>
+        <div class="history__block tab-content" data-target="five">
+          <img class="history__block-img" src="./img/959.jpg" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>Ферри Порше отправляет Фюрмана в отставку, и на его место приходит Петер Шуц[нем.], американский менеджер Porsche. При нём модели 911 вернули негласный статус основного автомобиля фирмы. В 1982 году появляется кабриолет, а через год базовой становится 911 Carrera с 231-сильной силовой установкой. Новинка 1985 года — версия Turbo-look (она же Supersport), являвшаяся обычной Carrera с ходовой и кузовом от модели Turbo, который в свою очередь имел более широкие задние крылья и большой спойлер (иногда его называют «столик для пикника», «поднос» или «китовый хвост»). Сама модель Turbo, годом позже, стала доступна в версии SE, или так называемой Slantnose со скошенной передней частью кузова и убирающимися фарами. В то же время появляется облегчённая 911 Carrera Clubsport, наследница Carrera RS 1970-х и предшественница GT3.</p>
+            <p>История Porsche 959 началась в 1980 году, когда в мировом чемпионате по ралли была утверждена новая «Группа Б». Ряд компаний были привлечены либеральными требованиями — не было почти никаких ограничений, кроме выпуска 200 омологационных экземпляров. В Porsche тоже решили принять участие. Шуц пришёл к выводу, что нужно показать весь инженерный потенциал компании. Техническая начинка была на высоком уровне: мощность 6-цилиндрового мотора (2,8 л, два турбокомпрессора) равнялась 450 л. с.; на каждое колесо полноприводной трансмиссии приходилось по 4 амортизатора, контролируемых компьютером (также он распределял крутящий момент между осями и мог изменять дорожный просвет); детали кузова изготовлялись из кевлара — лёгкого и прочного пластикового композитного материала. На стадии доводки Porsche 959 дважды участвовал в ралли-марафоне «Париж — Дакар» и в 1986 году занял 2 первых места в абсолютном зачёте.</p>
+            <p>Тем временем оказалось, что «Группы Б» больше нет: трагическая смерть нескольких пилотов и зрителей на ралли побудила федерацию автоспорта FISA закрыть её. В период с 1986—1988 годов произвели больше запланированных 200 штук.</p>
+            <p>Проект 959 оказался убыточен, но заложенные в нём идеи пригодились для развитий гоночных технологий в серийных автомобилях: упрощённой трансмиссией со всеми ведущими оснащались 964-е (1989—1993) и последующие версии, современную систему турбонаддува в своё распоряжение получила линейка Turbo (964/993), схожая передняя часть кузова с фарами и воздуховодами была у 993-х (1993—1998), воздухозаборники версии 996 Turbo (2000—2006) в переднем бампере и задних крыльях также напоминают аналогичные у 959-й. Фирменная адаптивная подвеска PASM (ставится на все нынешние автомобили Porsche) является современным аналогом той сложной системы, что была впервые опробована на Porsche 959.</p>
+          </div>
+        </div>
+        <div class="history__block tab-content" data-target="six">
+          <img class="history__block-img" src="./img/993.jpg" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>В эти десять лет ушли со сцены ветераны фирмы — переднемоторные машины и классические 911-е. Вместо них ввели абсолютно новые Boxster и 911 (996) Carrera.</p>
+            <p>Девять лет выпускали 901-ю и шестнадцать — 930-ю, но теперь такого Porsche не могла себе позволить; из-за этого 964 прожил всего 4 года. Это был финальный период для версии Targa в её классическом виде, равно как и для Turbo, и в какой-то степени для Carrera. Последняя теперь могла оснащаться полным приводом и автоматической КП. Кузов был изменён сильнее, чем могло показаться на первый взгляд: разработали новый каркас, серьёзно улучшили аэродинамику (Сх снизился с 0,40 до 0,32) и добавили активный задний спойлер. Отказались от архаичной торсионной подвески. Двигатель расточили до 3,6 л. Задне- и полноприводные версии именовались соответственно Carrera 2 и Carrera 4; спортивная Clubsport переименована обратно в RS. Turbo, первые 3 года, оснащалась проверенным 3,3 л мотором, а в 1993 году тоже получила 3,6-литровый вариант (360 л. с.). Ограниченным тиражом разошлись спецверсии 911 America Roadster и полугоночная 911 Turbo S. Всего выпустили около 62 тысяч 964-х. Суммарный объём её современников (968, 1992—1995 и 928 GTS, 1991—1995) не превысил и 15.</p>
+            <p>Экономический кризис начала 1990-х годов застал марку не в лучшей форме. В эти годы объёмы производства снизились, компания несла убытки. В 1993 году очередным руководителем Porsche назначен Венделин Видекинг[англ.], сменивший Хайнца Браницки (он стал директором после Арно Бона, а тот, в свою очередь, после Шуца). В этом же году в продажу поступило четвёртое поколение её флагмана — под названием 993.</p>
+            <p>Только теперь был сделан значительный шаг в эволюции модели. Встроенные аэродинамичные бампера, новая светотехника и более плавные формы кузова придали Porsche 911 современный облик. Мотор был в очередной раз немного форсирован, но серьёзно доработана была задняя подвеска. Turbo-look теперь обозначалась просто Carrera S/4S. Targa превратилась в обычное купе, только со сдвигающейся панорамной крышей, а Turbo заполучил себе полный привод и серьёзно модернизированный двигатель 3,6 л с двойным турбонаддувом. Его традиционные отличия от обычных 911-х — широкие задние крылья и шины — были все так же заметны, а большой задний спойлер вырос ещё больше, так как повышенная мощность (408 сил) заставила применить более крупные интеркулеры. Версия Turbo S 1997 года, с ещё более мощным двигателем и небольшими изменениями в экстерьере, стала последней новинкой в 34-летней истории главного спорткара фирмы.</p>
+          </div>
+        </div>
+        <div class="history__block tab-content" data-target="seven">
+          <img class="history__block-img" src="./img/997.webp" alt="">
+          <div class="history__block-middle-line">&nbsp</div>
+          <div class="history__block-text">
+            <p>Усилия Видекинга стали очевидны под конец 1996 года, когда поступил в продажу центральномоторный родстер Porsche 986 Boxster, ставший носителем нового лица марки. Автор его дизайна — Харм Лагаай (нидерл. Harm Lagaay), возглавлявший работы над экстерьерами всех Porsche 1990-х и первой половины 2000-х годов, при создании облика отталкивался от ранних машин компании — открытых 550 Spyder и 356 Speedster. Название модели образовано из двух слов — boxer (то есть оппозитный мотор) и roadster. В отличие от своих предшественников, чьи открытые версии переделывались из закрытых, 986-й с самого начала проектировался как открытый автомобиль. Единственным вариантом в линейке был родстер с 2,5-литровым 6-цилиндровым оппозитным двигателем, пока к нему в 2000 году не присоединился 986 Boxster S (3,2 л). Новый компактный спорткар по относительно невысокой цене был очень тепло принят рынком и возглавлял итоги годовых продаж Porsche вплоть до 2003 года, пока его не обогнал дебютировавший годом ранее Porsche 955 Cayenne. Производственных мощностей единственного завода не хватало, и часть компонентов для автомобилей собиралась в Финляндии, силами компании Valmet Automotive.</p>
+            <p>После Boxster все внимание было приковано к 911-й. В 1997 году на Франкфуртском автосалоне представили новую Carrera, и стало ясно, что у неё много общего с младшим братом, начиная от почти идентичных друг другу передних частей кузова, с фарами в форме капель, и схожими интерьерами, и заканчивая общей конструкцией двигателей. Такие решения позволили сократить расходование средств на разработку и производство, так как в те годы финансовые ресурсы марки были все ещё сильно ограничены.</p>
+            <p>В 2019 году Porsche представила новые модели Cayenne Coupe (340 л.с.) и Cayenne Turbo Coupe (550 л.с.).</p>
+            <p>29 сентября 2022 года Volkswagen AG, которому до этого принадлежало 100 % акций компании, провёл первичное размещение акций Porsche AG; оно стало вторым крупнейшим в истории Германии (после приватизации Deutsche Telecom в 1996 году) оценив Porsche в 75 млрд евро. Volkswagen сохранил за собой блокирующий пакет акций, такой же пакет акций получила компания Porsche SE, среди ключевых инвесторов размещения акций были Qatar Investment Authority, T. Rowe Price, суверенные фонды Норвегии и Абу-Даби. Вырученные средства от размещения акций составили 19,5 млрд евро, половину из них Volkswagen планирует вложить в развитие электромобилей, а вторая половина была распределена среди акционеров немецкого концерна.</p>
+          </div>
         </div>
       </div>
-      <div class="cards">
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/iphone-14-pro-max-gold.png"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
+      <img class="history__banner-img" src="./img/porsche-normal.webp" alt="porsche-normal">
+    </section>
+
+    <section class="model">
+      <div class="model__container">
+        <h2>Модельный ряд</h2>
+        <div class="model__inner">
+          <div class="model__inner-item model__inner-item--one">
+            <h3>718</h3>
+            <a class="model__inner-item--link" href="">Обзор</a>
           </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">135 000</div>
-              <div class="card__price card__price--common">150 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
-            </a>
-            <button class="card__add">В корзину</button>
+          <div class="model__inner-item model__inner-item--two">
+            <h3>911</h3>
+            <a class="model__inner-item--link" href="">Обзор</a>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/samsung-s22-black.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
+          <div class="model__inner-item model__inner-item--three">
+            <h3>Taycan</h3>
+            <a class="model__inner-item--link" href="">Обзор</a>
           </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">90 000</div>
-              <div class="card__price card__price--common">100 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Смартфон Samsung Galaxy S22 Ultra 256Gb, черный фантом
-            </a>
-            <button class="card__add">В корзину</button>
+          <div class="model__inner-item model__inner-item--four">
+            <h3>Panamera</h3>
+            <a class="model__inner-item--link" href="">Обзор</a>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/xiaomi-12x-purple.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
+          <div class="model__inner-item model__inner-item--five">
+            <h3>Macan</h3>
+            <a class="model__inner-item--link" href="">Обзор</a>
           </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">72 000</div>
-              <div class="card__price card__price--common">80 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Смартфон Xiaomi 12X 256Gb, фиолетовый
-            </a>
-            <button class="card__add">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/poco-f4-gt-yellow.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
-          </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">54 000</div>
-              <div class="card__price card__price--common">60 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Смартфон Xiaomi Poco F4 GT 128Gb, желтый
-            </a>
-            <button class="card__add">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/macbook-10-gray.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
-          </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">270 000</div>
-              <div class="card__price card__price--common">300 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Ноутбук Apple MacBook Pro 10, 512ГБ SSD, серый космос
-            </a>
-            <button class="card__add">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/msi-15-white.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
-          </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">90 000</div>
-              <div class="card__price card__price--common">100 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Ноутбук MSI Sword 15, 512ГБ SSD, белый</a
-            >
-            <button class="card__add">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/acer-3-gray.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
-          </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">72 000</div>
-              <div class="card__price card__price--common">80 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Ультрабук Acer Swift 3, 512ГБ SSD, серый</a
-            >
-            <button class="card__add">В корзину</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <a href="#" class="card__image">
-              <img
-                src="./images/lenovo-3-gray.jpg"
-                alt="Apple IPhone 14 PRO Max Gold"
-              />
-            </a>
-            <div class="card__label">-10%</div>
-          </div>
-          <div class="card__bottom">
-            <div class="card__prices">
-              <div class="card__price card__price--discount">45 000</div>
-              <div class="card__price card__price--common">50 000</div>
-            </div>
-            <a href="#" class="card__title">
-              Lenovo IdeaPad 3, 256ГБ SSD, серый</a
-            >
-            <button class="card__add">В корзину</button>
+          <div class="model__inner-item model__inner-item--six">
+            <h3>Cayenne</h3>
+            <a class="model__inner-item--link" href="">Обзор</a>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="product">
+      <div class="product__container">
+        <h2>Время подобрать свой porsche</h2>
+        <div class="product__info">
+          <div class="container">
+            <h2 class="product__title">В наличии</h2>
+            <h2 class="product__title product__title--gray">8 porsche</h2>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/718_cayman.jpg"
+                  alt="718 cayman, 2024"
+                />
+              </a>
+              <div class="card__label">-5%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">
+                  12 815 500
+                </div>
+                <div class="card__price card__price--common">13 490 000</div>
+              </div>
+              <a href="#" class="card__title">
+                718 cayman, 2024
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/718-boxster.jpg"
+                  alt="718 Boxster, 2024"
+                />
+              </a>
+              <div class="card__label">-5%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">14 250 000</div>
+                <div class="card__price card__price--common">15 000 000</div>
+              </div>
+              <a href="#" class="card__title">
+                718 Boxster, 2024
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/992-Turbo.jpg"
+                  alt="911 Turbo, 2024"
+                />
+              </a>
+              <div class="card__label">-3%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">30 021 500</div>
+                <div class="card__price card__price--common">30 950 000</div>
+              </div>
+              <a href="#" class="card__title">
+                911 Turbo, 2024
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/911_Turbo_S.jpg"
+                  alt="911 Turbo S, 2020"
+                />
+              </a>
+              <div class="card__label">-3%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">27 645 000</div>
+                <div class="card__price card__price--common">28 500 000</div>
+              </div>
+              <a href="#" class="card__title">
+                911 Turbo S, 2020
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/porsche-911-carrera-4-gts.jpg"
+                  alt="911 Carrera 4 GTS, 2024"
+                />
+              </a>
+              <div class="card__label">-3%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">25 123 000</div>
+                <div class="card__price card__price--common">25 900 000</div>
+              </div>
+              <a href="#" class="card__title">
+                911 Carrera 4 GTS, 2024
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/911c4s.jpg"
+                  alt="911 Carrera 4S, 2021"
+                />
+              </a>
+              <div class="card__label">-3%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">16 975 000</div>
+                <div class="card__price card__price--common">17 500 000</div>
+              </div>
+              <a href="#" class="card__title">
+                911 Carrera 4S, 2021
+                </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/panamera.jpg"
+                  alt="Panamera 4, 2024"
+                />
+              </a>
+              <div class="card__label">-2%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">20 090 000</div>
+                <div class="card__price card__price--common">20 500 000</div>
+              </div>
+              <a href="#" class="card__title">
+                Panamera 4, 2024
+                </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./img/cayenne.jpeg"
+                  alt="Cayenne S, 2022"
+                />
+              </a>
+              <div class="card__label">-2%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">18 914 000</div>
+                <div class="card__price card__price--common">19 300 000</div>
+              </div>
+              <a href="#" class="card__title">
+                Cayenne S, 2022
+                </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="feedback">
+      <div class="footer__whiteblock">&nbsp</div>
+      <form class="form" action="#" method="POST">
+        <input type="text" placeholder="Имя*" required name="Имя">
+        <input type="text" placeholder="Фамилия*" required name="Фамилия">
+        <input type="tel" placeholder="Телефон*" required name="Телефон">
+        <input type="email" placeholder="E-Mail*" required name="Почта">
+      </form>
+      <div class="footer__block"><img class="header__logo-name" src="./img/logo-name.png" alt="logo-name"></div>
+    </footer>
+
     <button class="cart" id="cart">
-      <img class="cart__image" src="./images/cart.png" alt="Cart" srcset="" />
+      <img class="cart__image" src="./img/cart.png" alt="Cart" srcset="" />
       <div class="cart__num" id="cart_num">0</div>
     </button>
     <div class="popup">
@@ -220,13 +366,13 @@
           <div class="popup__product">
             <div class="popup__product-wrap">
               <img
-                src="./images/iphone-14-pro-max-gold.png"
+                src=""
                 alt="Apple IPhone 14 Pro Max 256Gb"
                 class="popup__product-image"
               />
-              <h2 class="popup__product-title">
-                Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
-              </h2>
+              <div class="popup__product-title">
+                porsche
+              </div>
             </div>
             <div class="popup__product-wrap">
               <div class="popup__product-price">135000</div>
@@ -246,13 +392,13 @@
           <div class="popup__cost">
             <h2 class="popup__cost-title">Итого со скидкой</h2>
             <output class="popup__cost-value" id="popup_cost_discount"
-              >0</output
-            >
+              >0</output>
           </div>
         </div>
         <button class="popup__close" id="popup_close">&#10006;</button>
       </div>
     </div>
+
     <script src="./scripts/main.js"></script>
   </body>
 </html>
