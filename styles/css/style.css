@@ -259,6 +259,11 @@ h3 {
     transform: translateY(-5px);
 }
 
+.history__years-link:active,
+.history__years-link:focus {
+    color: #00b0c1;
+}
+
 .history__years-line {
     fill: #00b0c1;
 }
@@ -729,15 +734,16 @@ h3 {
         height: 500px;
     }
     h1 {
-        margin-top: 25%;
+        margin-top: 30%;
         margin-right: 40px;
+        font-size: 40px;
     }
     .start__whiteblock,
     .footer__whiteblock {
         height: 100px;
     }
     .form {
-        margin: 70px 0 0 20px;
+        margin: 150px 0 0 20px;
     }
     .splitview,
     .panel,
@@ -754,6 +760,9 @@ h3 {
     .panel img {
         width: 80%;
         top: 60%;
+    }
+    .menu__item--link {
+        font-size: 16px;
     }
 }
 
