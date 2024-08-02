@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/css/normalize.css">
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/model.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>718</title>
+</head>
+<body>
+    <header class="header sticky">
+        <div class="header__container">
+          <img class="header__logo" src="./img/porsche-logo.jpg" alt="logo">
+          <img class="header__logo-name" src="./img/logo-name.png" alt="logo-name">
+          <div class="burger__menu">
+            <button class="burger" aria-label="меню">
+              <span id="burger" class="burger__btn"><img src="./img/burger-menu-svgrepo-com.svg" alt=""></span>
+            </button>
+            <div>
+              <ul id="menu">
+                <li class="menu__item"><a class="menu__item--link" href="#history">Прикоснись к истории</a></li>
+                <li class="menu__item"><a class="menu__item--link" href="#model">Модельный ряд</a></li>
+                <li class="menu__item"><a class="menu__item--link" href="#product">Подобрать porsche</a></li>
+                <li class="menu__item"><a class="menu__item--link" href="#feedback">Обратная связь</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section class="start-model">
+        <div class="start-model__container">
+          <div id="flex-container" class="testimonials">
+            <div id="left-zone">
+              <ul class="list">
+                <li class="item">
+                  <input type="radio" id="radio_testimonial-1" name="basic_carousel" checked="checked" />
+                  <label class="label_testimonial-1" for="radio_testimonial-1">718 Cayman</label>
+                  <div class="content-test content_testimonial-1">
+                    <h2>718 Cayman</h2>
+                    <img src="./img/porsche718.webp" alt="718 Cayman">
+                  </div>
+                </li>
+                <li class="item">
+                  <input type="radio" id="radio_testimonial-2" name="basic_carousel" />
+                  <label class="label_testimonial-2" for="radio_testimonial-2">718 Boxster</label>
+                  <div class="content-test content_testimonial-2">
+                    <h2>718 Boxster</h2>
+                    <img src="./img/porsche718boxter.webp" alt="718 Boxster">
+                  </div>
+                </li>
+                <li class="item">
+                  <input type="radio" id="radio_testimonial-3" name="basic_carousel" />
+                  <label class="label_testimonial-3" for="radio_testimonial-3">718 Cayman S</label>
+                  <div class="content-test content_testimonial-3">
+                    <h2>718 Cayman S</h2>
+                    <img src="./img/porschecaymanS.webp" alt="718 Cayman S">
+                  </div>
+                </li>
+                <li class="item">
+                  <input type="radio" id="radio_testimonial-4" name="basic_carousel" />
+                  <label class="label_testimonial-4" for="radio_testimonial-4">718 Boxster S</label>
+                  <div class="content-test content_testimonial-4">
+                    <h2>718 Boxster S</h2>
+                    <img src="./img/porscheboxsterS.webp" alt="718 Boxster S">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="right-zone"></div>
+          </div>
+        </div>
+    </section>
+    
+    <script src="./scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
