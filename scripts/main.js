@@ -2,6 +2,9 @@ document.querySelector('.burger').addEventListener('click', function(){
   document.querySelector('#menu').classList.toggle('is-active')
 })
 
+
+// Табы для истории
+
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.history__years-link').forEach(function(tabsBtn) {
       tabsBtn.addEventListener('click', function(event) {
@@ -14,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
       })
   })
 })
+
+
+// Слайдер
 
 document.addEventListener('DOMContentLoaded', function() {
   var parent = document.querySelector('.splitview'),
@@ -37,43 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
     topPanel.style.width = event1.clientY + skewHack + delta + 'px';
 });
 });
-
-
-// слайдер model
-
-var testimonialItems = document.querySelectorAll(".item label");
-var timer;
-function cycleTestimonials(index) {
-   timer = setTimeout(function() {
-    var evt;
-    if (document.createEvent){
-      //If browser = IE, then polyfill
-      evt = document.createEvent('MouseEvent');
-      evt.initMouseEvent('click', true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-    } else {
-      //If Browser = modern, then create new MouseEvent
-      evt = new MouseEvent("click", {
-            view: window,
-            bubbles: true,
-            cancelable: true,
-            clientX: 20
-          });
-    }
-    var ele = "." + testimonialItems[index].className;
-    var ele2 = document.querySelector(ele)
-    ele2.dispatchEvent(evt);
-    index++; // Increment the index
-    if (index >= testimonialItems.length) {
-      index = 0; // Set it back to `0` when it reaches `3`
-    }
-    cycleTestimonials(index); // recursively call `cycleTestimonials()`
-    document.querySelector(".testimonials").addEventListener("click", function() {
-      clearTimeout(timer); //stop the carousel when someone clicks on the div
-    });
-  }, 2000); //adjust scroll speed in miliseconds
-}
-//run the function
-cycleTestimonials(0);
 
 // Утилиты
 
