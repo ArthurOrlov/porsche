@@ -1,10 +1,12 @@
 .slider {
-  width: 600px;
-  height: 200px;
+  width: 1200px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 60px auto;
+  position: relative;
+  background-color: #fff;
 }
 .wrapper {
   overflow: hidden;
@@ -16,23 +18,50 @@
   width: 10000px;
   position: relative;
   top: 0;
-  left: -600px;
+  left: -1200px;
 }
 #items.shifting {
   transition: left .2s ease-out;
 }
 .slide {
-  width: 600px;
-  height: 200px;
+  width: 1200px;
+  height: 600px;
+  padding: 0 60px 60px 60px;
+  color: #fff;
   cursor: pointer;
   float: left;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   transition: all 1s;
   position: relative;
-  background: #FFCF47;
 }
+
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide1 {
+  background-image: url(./img/Model718porsche.webp);
+}
+.slide2 {
+  background-image: url(./img/Model718porsche2.webp);
+}
+.slide3 {
+  background-image: url(./img/Model718porsche3.webp);
+}
+.slide4 {
+  background-image: url(./img/Model718porsche4.webp);
+}
+.slide5 {
+  background-image: url(./img/Model718porsche5.webp);
+}
+
 .control {
   position: absolute;
   top: 50%;
@@ -52,14 +81,33 @@
   cursor: pointer;
 }
 .prev {
-  background-image: url(ChevronLeft.png);
+  background-image: url(./img/arrow-right-svgrepo-com\ \(2\).svg);
   left: -20px;
 }
 .next {
-  background-image: url(ChevronRight-512.png);
+  background-image: url(./img/arrow-right-svgrepo-com\ \(1\).svg);
   right: -20px;
 }
 .prev:active,
 .next:active {
   transform: scale(0.8);
+}
+
+
+@media (max-width: 1200px) {
+  .slider {
+    width: 900px;
+    height: 500px;
+  }
+  .slide {
+    width: 900px;
+    height: 500px;
+  }
+  #items {
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: -900px;
+  }
+
 }
