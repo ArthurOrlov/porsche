@@ -111,3 +111,29 @@
   }
 
 }
+@media (max-width: 900px) {
+  .slider,
+  .slide {
+    width: 600px;
+    height: 400px;
+  }
+  .prev {
+    left: 20px;
+  }
+  .next {
+    right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .slider,
+  .slide {
+    width: 400px;
+    height: 300px;
+  }
+  .prev {
+    left: 20px;
+  }
+  .next {
+    right: 20px;
+  }
+}

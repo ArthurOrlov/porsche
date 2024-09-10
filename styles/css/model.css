@@ -293,6 +293,17 @@
   }
 }
 
+@media (max-width: 900px) {
+  .start-model,
+  #characteristic,
+  #characteristicBoxster,
+  #characteristicCaymanS,
+  #characteristicBoxsterS {
+    display: none;
+  }
+
+}
+
 
 
 
